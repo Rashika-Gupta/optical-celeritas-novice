@@ -1,0 +1,7 @@
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/OpNovice.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/edit_cache.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/rebuild_cache.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/list_install_components.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/install.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/install/local.dir
+/Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles/install/strip.dir
