@@ -44,13 +44,19 @@
 #include "G4SystemOfUnits.hh"
 #include "G4ThreeVector.hh"
 
+#include "OpNoviceSensitiveDetector.hh"
+#include "G4SDManager.hh"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 OpNoviceDetectorConstruction::OpNoviceDetectorConstruction() : G4VUserDetectorConstruction()
 {
   // create a messenger for this class
   fDetectorMessenger = new OpNoviceDetectorMessenger(this);
 }
-
+OpNoviceDetectorConstruction::OpNoviceDetectorConstruction(OpNoviceEventAction* event)
+    : G4VUserDetectorConstruction(), eventAction_(event)
+{
+    // Constructor body can be empty or used for initialization if needed
+}
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 OpNoviceDetectorConstruction::~OpNoviceDetectorConstruction()
 {
@@ -331,7 +337,23 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   }
   // done testing user-defined properties
   ////////////////////////////////////////////////////////////////////////////
-
+/*Adding sensitive detector for celeritas */
+  auto* bubble_sd = new OpNoviceSensitiveDetector(eventAction_);
+  G4SDManager::GetSDMpointer()->AddNewDetector(bubble_sd);
+  bubbleAir_log->SetSensitiveDetector(bubble_sd);
+   // Set the sensitive detector for the water tank
+  auto* water_sd = new OpNoviceSensitiveDetector(eventAction_);
+  G4SDManager::GetSDMpointer()->AddNewDetector(water_sd);
+  waterTank_log->SetSensitiveDetector(water_sd);
+  // Set the sensitive detector for the exp hall
+  auto* expHall_sd = new OpNoviceSensitiveDetector(eventAction_);
+  G4SDManager::GetSDMpointer()->AddNewDetector(expHall_sd);
+  expHall_log->SetSensitiveDetector(expHall_sd);
+  // Set the sensitive detector for the world
+  auto* world_sd = new OpNoviceSensitiveDetector(eventAction_);
+  G4SDManager::GetSDMpointer()->AddNewDetector(world_sd);
+  world_log->SetSensitiveDetector(world_sd);    
+ 
   return world_phys;
 }
 

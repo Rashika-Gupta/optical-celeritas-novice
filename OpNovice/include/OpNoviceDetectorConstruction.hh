@@ -34,6 +34,7 @@
 #include "G4VUserDetectorConstruction.hh"
 #include "globals.hh"
 
+#include "OpNoviceEventAction.hh"
 #include <CLHEP/Units/SystemOfUnits.h>
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -43,10 +44,12 @@ class OpNoviceDetectorMessenger;
 class OpNoviceDetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
-    OpNoviceDetectorConstruction();
+  //  ~OpNoviceDetectorConstruction() override = default;
+    OpNoviceDetectorConstruction();  // <---- This line fixes your error
+    explicit OpNoviceDetectorConstruction(OpNoviceEventAction* eventAction);
     ~OpNoviceDetectorConstruction() override;
-
-    G4VPhysicalVolume* Construct() override;
+    virtual G4VPhysicalVolume* Construct() override;
+    //void ConstructSDandField() override;
 
     void SetVerbose(G4bool verbose);
     G4bool IsVerbose() const;
@@ -57,6 +60,8 @@ class OpNoviceDetectorConstruction : public G4VUserDetectorConstruction
     G4String GetDumpGdmlFile() const;
 
   private:
+
+    OpNoviceEventAction* eventAction_;
     void PrintError(G4String);
 
     OpNoviceDetectorMessenger* fDetectorMessenger = nullptr;

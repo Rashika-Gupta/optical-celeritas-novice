@@ -37,6 +37,7 @@
 #include "G4ParticleDefinition.hh"
 #include "G4Run.hh"
 
+#include <accel/TrackingManagerIntegration.hh>
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 OpNoviceRunAction::OpNoviceRunAction(OpNovicePrimaryGeneratorAction* prim)
   : G4UserRunAction(), fRun(nullptr), fPrimary(prim)
@@ -50,8 +51,10 @@ G4Run* OpNoviceRunAction::GenerateRun()
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-void OpNoviceRunAction::BeginOfRunAction(const G4Run*)
+void OpNoviceRunAction::BeginOfRunAction(const G4Run* run)
 {
+
+  celeritas::TrackingManagerIntegration::Instance().BeginOfRunAction(run);
   if (fPrimary) {
     G4ParticleDefinition* particle = fPrimary->GetParticleGun()->GetParticleDefinition();
     G4double energy = fPrimary->GetParticleGun()->GetParticleEnergy();
@@ -60,8 +63,9 @@ void OpNoviceRunAction::BeginOfRunAction(const G4Run*)
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-void OpNoviceRunAction::EndOfRunAction(const G4Run*)
+void OpNoviceRunAction::EndOfRunAction(const G4Run* run)
 {
+  celeritas::TrackingManagerIntegration::Instance().EndOfRunAction(run);
   if (isMaster) fRun->EndOfRun();
 }
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

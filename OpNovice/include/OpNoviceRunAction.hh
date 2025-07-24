@@ -51,8 +51,8 @@ class OpNoviceRunAction : public G4UserRunAction
     ~OpNoviceRunAction() override = default;
 
     G4Run* GenerateRun() override;
-    void BeginOfRunAction(const G4Run*) override;
-    void EndOfRunAction(const G4Run*) override;
+    void BeginOfRunAction(const G4Run* run) override;
+    void EndOfRunAction(const G4Run* run) override;
 
   private:
     OpNoviceRun* fRun = nullptr;

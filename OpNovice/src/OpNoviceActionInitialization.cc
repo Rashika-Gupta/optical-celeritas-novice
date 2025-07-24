@@ -33,7 +33,10 @@
 #include "OpNovicePrimaryGeneratorAction.hh"
 #include "OpNoviceRunAction.hh"
 #include "OpNoviceStackingAction.hh"
-#include "OpNoviceSteppingAction.hh"
+#include "OpNoviceDetectorConstruction.hh"
+#include "G4RunManager.hh"
+#include <iostream>
+//#include "OpNoviceSteppingAction.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void OpNoviceActionInitialization::BuildForMaster() const
@@ -49,6 +52,5 @@ void OpNoviceActionInitialization::Build() const
   SetUserAction(new OpNoviceRunAction(primary));
   auto event = new OpNoviceEventAction();
   SetUserAction(event);
-  SetUserAction(new OpNoviceSteppingAction(event));
   SetUserAction(new OpNoviceStackingAction());
 }
