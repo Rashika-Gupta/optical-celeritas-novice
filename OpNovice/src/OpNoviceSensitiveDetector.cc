@@ -9,14 +9,47 @@
 #include "G4StepPoint.hh"
 #include "G4Track.hh"
 
-OpNoviceSensitiveDetector::OpNoviceSensitiveDetector(OpNoviceEventAction* eventAction)
-    : G4VSensitiveDetector("OpNoviceSensitiveDetector"), eventAction_(eventAction)
-{
-}
+//OpNoviceSensitiveDetector::OpNoviceSensitiveDetector(OpNoviceEventAction* eventAction)
+//    : G4VSensitiveDetector("OpNoviceSensitiveDetector"), eventAction_(eventAction)
+//{
+//}
+
+OpNoviceSensitiveDetector::OpNoviceSensitiveDetector(const G4String& name)
+    : G4VSensitiveDetector(name)
+{}
 
 G4bool OpNoviceSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
 {
-    std::cout << "Processing hit in OpNoviceSensitiveDetector" << std::endl;
+    G4double edep = step->GetTotalEnergyDeposit();
+    if (edep > 0)
+    {
+        G4cout << "[ProcessHits] Energy deposited: "
+               << edep / CLHEP::eV << " eV" << G4endl;
+    }
+
+    const G4ParticleDefinition* pd = step->GetTrack()->GetParticleDefinition();
+    if (pd == G4OpticalPhoton::OpticalPhotonDefinition())
+    {
+        G4cout << "[ProcessHits] Optical photon passed through SD" << G4endl;
+    }
+
+    return true;
+}
+/*
+G4bool OpNoviceSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
+{
+    //std::cout << "Processing hit in OpNoviceSensitiveDetector" << std::endl;
+   G4double edep = step->GetTotalEnergyDeposit();
+
+    if (edep > 0)
+    {
+        G4String volname = step->GetPreStepPoint()->GetTouchableHandle()
+                                               ->GetVolume()->GetName();
+        G4cout << "[SD] Volume: " << volname
+               << " | Energy deposited: " << edep<< " keV" << G4endl;
+    }
+
+    return true;
     static G4ParticleDefinition* opticalphoton = G4OpticalPhoton::Definition();
 
   const G4ParticleDefinition* particleDef =
@@ -69,3 +102,4 @@ G4bool OpNoviceSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*)
     return true;
 }
 
+*/

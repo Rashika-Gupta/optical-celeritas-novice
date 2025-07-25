@@ -46,6 +46,9 @@
 
 #include "OpNoviceSensitiveDetector.hh"
 #include "G4SDManager.hh"
+
+#include "G4LogicalVolumeStore.hh"
+#include <iostream>
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 OpNoviceDetectorConstruction::OpNoviceDetectorConstruction() : G4VUserDetectorConstruction()
 {
@@ -338,13 +341,14 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   // done testing user-defined properties
   ////////////////////////////////////////////////////////////////////////////
 /*Adding sensitive detector for celeritas */
-  auto* bubble_sd = new OpNoviceSensitiveDetector(eventAction_);
+ /* auto* bubble_sd = new OpNoviceSensitiveDetector(eventAction_);
   G4SDManager::GetSDMpointer()->AddNewDetector(bubble_sd);
   bubbleAir_log->SetSensitiveDetector(bubble_sd);
    // Set the sensitive detector for the water tank
   auto* water_sd = new OpNoviceSensitiveDetector(eventAction_);
   G4SDManager::GetSDMpointer()->AddNewDetector(water_sd);
   waterTank_log->SetSensitiveDetector(water_sd);
+  
   // Set the sensitive detector for the exp hall
   auto* expHall_sd = new OpNoviceSensitiveDetector(eventAction_);
   G4SDManager::GetSDMpointer()->AddNewDetector(expHall_sd);
@@ -353,10 +357,60 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   auto* world_sd = new OpNoviceSensitiveDetector(eventAction_);
   G4SDManager::GetSDMpointer()->AddNewDetector(world_sd);
   world_log->SetSensitiveDetector(world_sd);    
- 
+ */
   return world_phys;
 }
 
+
+void OpNoviceDetectorConstruction::ConstructSDandField()
+{
+
+    G4SDManager* sdManager = G4SDManager::GetSDMpointer();
+    std::cout<< "OpNoviceDetectorConstruction::ConstructSDandField() called" << std::endl;
+    // Create SD instance
+    auto* sd = new OpNoviceSensitiveDetector("OpNoviceSD");
+
+    // Register SD with manager
+    sdManager->AddNewDetector(sd);
+
+    // Attach to your logical volume
+    // Replace with your actual logical volume pointer
+   // waterTank_log->SetSensitiveDetector(sd);
+    // Get the logical volume by name (must match the name you gave in Construct())
+    G4LogicalVolumeStore* lvStore = G4LogicalVolumeStore::GetInstance();
+    G4LogicalVolume* logicTank = lvStore->GetVolume("Tank");  // or your volume name
+    if (logicTank)
+    {
+        logicTank->SetSensitiveDetector(sd);
+        G4cout << "Attached SD to logical volume: Tank" << G4endl;
+    }
+    else
+    {
+        G4cerr << "ERROR: Could not find logical volume 'Tank' to attach SD!" << G4endl;
+    }
+    // You can repeat the above for other logical volumes as needed
+    G4LogicalVolume* logicBubble = lvStore->GetVolume("Bubble");  // or your volume name
+    if (logicBubble)
+    {
+        logicBubble->SetSensitiveDetector(sd);
+        G4cout << "Attached SD to logical volume: Bubble" << G4endl;
+
+    }
+    else
+    {
+        G4cerr << "ERROR: Could not find logical volume 'Bubble' to attach SD!" << G4endl;
+    } 
+    // If you have more logical volumes, repeat the process
+    G4LogicalVolume* logicExpHall = lvStore->GetVolume("expHall");
+    if (logicExpHall)
+    {
+        logicExpHall->SetSensitiveDetector(sd);
+        G4cout << "Attached SD to logical volume: expHall" << G4endl;
+    }
+    else
+    {        G4cerr << "ERROR: Could not find logical volume 'expHall' to attach SD!" << G4endl;
+    }
+}
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void OpNoviceDetectorConstruction::SetDumpGdml(G4bool val)
 {
