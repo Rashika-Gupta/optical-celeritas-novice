@@ -29,7 +29,7 @@
 
 #ifndef OpNoviceActionInitialization_h
 #define OpNoviceActionInitialization_h 1
-
+#include "OpNoviceEventAction.hh"
 #include "G4VUserActionInitialization.hh"
 
 class OpNoviceActionInitialization : public G4VUserActionInitialization
@@ -40,6 +40,8 @@ class OpNoviceActionInitialization : public G4VUserActionInitialization
 
     void BuildForMaster() const override;
     void Build() const override;
+  private:
+    mutable OpNoviceEventAction* eventAction_ = nullptr;
 };
 
 #endif

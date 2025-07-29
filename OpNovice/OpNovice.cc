@@ -57,6 +57,10 @@
 #include "G4UImanager.hh"
 #include "G4VisExecutive.hh"
 
+#include <accel/TrackingManagerConstructor.hh>
+#include <accel/TrackingManagerIntegration.hh>
+
+#include "MakeCelerOptions.hh"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 namespace
 {
@@ -112,43 +116,49 @@ int main(int argc, char** argv)
     }
   }
 
+  
   // Instantiate G4UIExecutive if interactive mode
   G4UIExecutive* ui = nullptr;
   if (macro.size() == 0) {
     ui = new G4UIExecutive(argc, argv);
   }
-
+  
   // Construct the default run manager
   auto runManager = G4RunManagerFactory::CreateRunManager();
-#ifdef G4MULTITHREADED
+  #ifdef G4MULTITHREADED
   if (nThreads > 0) runManager->SetNumberOfThreads(nThreads);
-#endif
-
+  #endif
+  
   // Seed the random number generator manually
   G4Random::setTheSeed(myseed);
-
+  
   // Set mandatory initialization classes
   //
   // Detector construction
   if (gdmlfile != "") {
-#ifdef GEANT4_USE_GDML
+    #ifdef GEANT4_USE_GDML
     runManager->SetUserInitialization(new OpNoviceGDMLDetectorConstruction(gdmlfile));
-#else
+    #else
     G4cout << "Error! Input gdml file specified, but Geant4 wasn't" << G4endl
-           << "built with gdml support." << G4endl;
+    << "built with gdml support." << G4endl;
     return 1;
-#endif
+    #endif
   }
   else {
     runManager->SetUserInitialization(new OpNoviceDetectorConstruction());
   }
   // Physics list
+  auto& tmi = celeritas::TrackingManagerIntegration::Instance();
+  
   G4VModularPhysicsList* physicsList = new FTFP_BERT;
-  physicsList->ReplacePhysics(new G4EmStandardPhysics_option4());
+  //physicsList->ReplacePhysics(new G4EmStandardPhysics_option4());
   auto opticalPhysics = new G4OpticalPhysics();
   physicsList->RegisterPhysics(opticalPhysics);
+  physicsList->RegisterPhysics(
+    new celeritas::TrackingManagerConstructor(&tmi));
+  tmi.SetOptions(celeritas::example::MakeCelerOptions());
+  
   runManager->SetUserInitialization(physicsList);
-
   runManager->SetUserInitialization(new OpNoviceActionInitialization());
 
   G4VisManager* visManager = new G4VisExecutive("Quiet");

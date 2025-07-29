@@ -57,6 +57,7 @@ class OpNoviceEventAction : public G4UserEventAction
     G4int fAbsorption = 0;
     G4int fMie = 0;
     G4int fBoundary = 0;
+   
 };
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 #endif

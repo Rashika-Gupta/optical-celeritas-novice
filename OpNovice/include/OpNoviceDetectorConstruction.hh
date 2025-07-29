@@ -50,7 +50,7 @@ class OpNoviceDetectorConstruction : public G4VUserDetectorConstruction
     ~OpNoviceDetectorConstruction() override;
     virtual G4VPhysicalVolume* Construct() override;
     //void ConstructSDandField() override;
-
+    void ConstructSDandField() override;
     void SetVerbose(G4bool verbose);
     G4bool IsVerbose() const;
 
@@ -61,7 +61,7 @@ class OpNoviceDetectorConstruction : public G4VUserDetectorConstruction
 
   private:
 
-    OpNoviceEventAction* eventAction_;
+    OpNoviceEventAction* eventAction_ = nullptr;  // Pointer to the event action
     void PrintError(G4String);
 
     OpNoviceDetectorMessenger* fDetectorMessenger = nullptr;
