@@ -14,10 +14,26 @@ MESSAGE("?GEANT4_USE_GDML " ${GEANT4_USE_GDML})
 # to build a batch mode only executable
 #
 option(WITH_GEANT4_UIVIS "Build example with Geant4 UI and Vis drivers" ON)
+
+set(Celeritas_DIR "/Users/r1i/Desktop/project/forked/celeritas/build/lib/cmake/Celeritas")
+find_package(Celeritas 0.6 REQUIRED)
+
 if(WITH_GEANT4_UIVIS)
   find_package(Geant4 REQUIRED ui_all vis_all)
 else()
   find_package(Geant4 REQUIRED)
+endif()
+
+if(NOT Celeritas_FOUND)
+  message(FATAL_ERROR
+    "No Celeritas installation found.\n"
+    "Export Celeritas_ROOT=/path/to/celeritas/install or use CMAKE_INSTALL_PREFIX"
+  )
+endif()
+
+if(NOT CELERITAS_USE_Geant4)
+  message(SEND_ERROR "This example requires Geant4 support "
+    "to be enabled in Celeritas")
 endif()
 
 #----------------------------------------------------------------------------
@@ -47,7 +63,13 @@ endif()
 # Add the executable, and link it to the Geant4 libraries
 #
 add_executable(OpNovice OpNovice.cc ${sources} ${headers})
-target_link_libraries(OpNovice ${Geant4_LIBRARIES} )
+#target_link_libraries(OpNovice ${Geant4_LIBRARIES} )
+
+celeritas_target_link_libraries(OpNovice
+  ${Geant4_LIBRARIES}
+  Celeritas::celeritas # for user action
+  Celeritas::G4
+)
 
 #----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we
