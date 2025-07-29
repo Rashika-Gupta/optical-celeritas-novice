@@ -44,6 +44,7 @@ celeritas::SetupOptions MakeCelerOptions()
     opts.max_num_tracks = 1024 * 16;
     opts.initializer_capacity = 1024 * 128 * 4;
 
+  //  opts.ignore_processes = {"CoulombScat", "Cerenkov"};
     opts.ignore_processes = {"CoulombScat"};
 
     // Set along-step factory with zero field

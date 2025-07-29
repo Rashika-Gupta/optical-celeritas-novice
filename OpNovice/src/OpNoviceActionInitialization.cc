@@ -32,7 +32,6 @@
 #include "OpNoviceEventAction.hh"
 #include "OpNovicePrimaryGeneratorAction.hh"
 #include "OpNoviceRunAction.hh"
-#include "OpNoviceStackingAction.hh"
 #include "OpNoviceDetectorConstruction.hh"
 #include "G4RunManager.hh"
 #include <iostream>
@@ -50,7 +49,15 @@ void OpNoviceActionInitialization::Build() const
   auto primary = new OpNovicePrimaryGeneratorAction();
   SetUserAction(primary);
   SetUserAction(new OpNoviceRunAction(primary));
-  auto event = new OpNoviceEventAction();
-  SetUserAction(event);
-  SetUserAction(new OpNoviceStackingAction());
+ // auto eventAction_ = new OpNoviceEventAction();
+  //  SetUserAction(eventAction_);
+
+    // Pass it to RunAction
+   // SetUserAction(new OpNoviceRunAction(eventAction_));
+
+    // Also pass it to DetectorConstruction
+   // auto* detector = new OpNoviceDetectorConstruction(eventAction_);
+   // G4RunManager::GetRunManager()->SetUserInitialization(detector);
+
+ // SetUserAction(new OpNoviceStackingAction());
 }

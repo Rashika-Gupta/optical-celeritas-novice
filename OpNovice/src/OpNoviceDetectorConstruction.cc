@@ -46,7 +46,7 @@
 
 #include "OpNoviceSensitiveDetector.hh"
 #include "G4SDManager.hh"
-
+#include "OpNoviceEventAction.hh"
 #include "G4LogicalVolumeStore.hh"
 #include <iostream>
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -366,23 +366,13 @@ void OpNoviceDetectorConstruction::ConstructSDandField()
 {
 
     G4SDManager* sdManager = G4SDManager::GetSDMpointer();
-    std::cout<< "OpNoviceDetectorConstruction::ConstructSDandField() called" << std::endl;
-    // Create SD instance
-    auto* sd = new OpNoviceSensitiveDetector("OpNoviceSD");
-
-    // Register SD with manager
+    auto* sd = new OpNoviceSensitiveDetector("OpNoviceSD", eventAction_);
     sdManager->AddNewDetector(sd);
-
-    // Attach to your logical volume
-    // Replace with your actual logical volume pointer
-   // waterTank_log->SetSensitiveDetector(sd);
-    // Get the logical volume by name (must match the name you gave in Construct())
     G4LogicalVolumeStore* lvStore = G4LogicalVolumeStore::GetInstance();
     G4LogicalVolume* logicTank = lvStore->GetVolume("Tank");  // or your volume name
     if (logicTank)
     {
         logicTank->SetSensitiveDetector(sd);
-        G4cout << "Attached SD to logical volume: Tank" << G4endl;
     }
     else
     {
@@ -393,8 +383,6 @@ void OpNoviceDetectorConstruction::ConstructSDandField()
     if (logicBubble)
     {
         logicBubble->SetSensitiveDetector(sd);
-        G4cout << "Attached SD to logical volume: Bubble" << G4endl;
-
     }
     else
     {
@@ -405,12 +393,21 @@ void OpNoviceDetectorConstruction::ConstructSDandField()
     if (logicExpHall)
     {
         logicExpHall->SetSensitiveDetector(sd);
-        G4cout << "Attached SD to logical volume: expHall" << G4endl;
     }
     else
     {        G4cerr << "ERROR: Could not find logical volume 'expHall' to attach SD!" << G4endl;
     }
+    G4LogicalVolume* logicWorld = lvStore->GetVolume("World");
+    if (logicWorld)
+    {
+        logicWorld->SetSensitiveDetector(sd);
+    }
+    else
+    {
+        G4cerr << "ERROR: Could not find logical volume 'World' to attach SD!" << G4endl;
+    }
 }
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void OpNoviceDetectorConstruction::SetDumpGdml(G4bool val)
 {
