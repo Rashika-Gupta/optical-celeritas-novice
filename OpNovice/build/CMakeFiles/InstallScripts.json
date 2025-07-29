@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/r1i/Desktop/project/optical-novice/OpNovice/build/cmake_install.cmake"
+		"/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

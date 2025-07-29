@@ -1,6 +1,6 @@
 CMakeFiles/OpNovice.dir/src/OpNovicePrimaryGeneratorMessenger.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNovicePrimaryGeneratorMessenger.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNovicePrimaryGeneratorMessenger.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNovicePrimaryGeneratorMessenger.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNovicePrimaryGeneratorMessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UImessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIdirectory.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcommand.hh \
@@ -819,7 +819,7 @@ CMakeFiles/OpNovice.dir/src/OpNovicePrimaryGeneratorMessenger.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/defs.h \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIparameter.hh \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNovicePrimaryGeneratorAction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNovicePrimaryGeneratorAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleGun.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPrimaryGenerator.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleDefinition.hh \

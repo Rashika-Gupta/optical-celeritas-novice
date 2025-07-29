@@ -1,6 +1,6 @@
 CMakeFiles/OpNovice.dir/src/OpNoviceDetectorMessenger.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNoviceDetectorMessenger.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceDetectorMessenger.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNoviceDetectorMessenger.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceDetectorMessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UImessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIdirectory.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcommand.hh \
@@ -819,10 +819,12 @@ CMakeFiles/OpNovice.dir/src/OpNoviceDetectorMessenger.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/defs.h \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIparameter.hh \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceDetectorConstruction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceDetectorConstruction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserDetectorConstruction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceEventAction.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserEventAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/SystemOfUnits.h \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/defs.h \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceGDMLDetectorConstruction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceGDMLDetectorConstruction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcmdWithABool.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcmdWithAString.hh

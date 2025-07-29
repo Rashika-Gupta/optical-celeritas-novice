@@ -1,6 +1,6 @@
 CMakeFiles/OpNovice.dir/src/OpNoviceGDMLDetectorConstruction.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNoviceGDMLDetectorConstruction.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceGDMLDetectorConstruction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNoviceGDMLDetectorConstruction.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceGDMLDetectorConstruction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserDetectorConstruction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/globals.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ios.hh \
@@ -811,7 +811,7 @@ CMakeFiles/OpNovice.dir/src/OpNoviceGDMLDetectorConstruction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceDetectorMessenger.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceDetectorMessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UImessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIdirectory.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcommand.hh \

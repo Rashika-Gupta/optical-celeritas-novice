@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/r1i/Desktop/project/optical-novice/OpNovice
+CMAKE_SOURCE_DIR = /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/r1i/Desktop/project/optical-novice/OpNovice/build
+CMAKE_BINARY_DIR = /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles /Users/r1i/Desktop/project/optical-novice/OpNovice/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build/CMakeFiles /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/r1i/Desktop/project/optical-novice/OpNovice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,6 +198,30 @@ OpNovice.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/OpNovice.cc.s
 .PHONY : OpNovice.cc.s
 
+src/MakeCelerOptions.o: src/MakeCelerOptions.cc.o
+.PHONY : src/MakeCelerOptions.o
+
+# target to build an object file
+src/MakeCelerOptions.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/MakeCelerOptions.cc.o
+.PHONY : src/MakeCelerOptions.cc.o
+
+src/MakeCelerOptions.i: src/MakeCelerOptions.cc.i
+.PHONY : src/MakeCelerOptions.i
+
+# target to preprocess a source file
+src/MakeCelerOptions.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/MakeCelerOptions.cc.i
+.PHONY : src/MakeCelerOptions.cc.i
+
+src/MakeCelerOptions.s: src/MakeCelerOptions.cc.s
+.PHONY : src/MakeCelerOptions.s
+
+# target to generate assembly for a file
+src/MakeCelerOptions.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/MakeCelerOptions.cc.s
+.PHONY : src/MakeCelerOptions.cc.s
+
 src/OpNoviceActionInitialization.o: src/OpNoviceActionInitialization.cc.o
 .PHONY : src/OpNoviceActionInitialization.o
 
@@ -221,6 +245,30 @@ src/OpNoviceActionInitialization.s: src/OpNoviceActionInitialization.cc.s
 src/OpNoviceActionInitialization.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceActionInitialization.cc.s
 .PHONY : src/OpNoviceActionInitialization.cc.s
+
+src/OpNoviceCeleritasTrackingAction.o: src/OpNoviceCeleritasTrackingAction.cc.o
+.PHONY : src/OpNoviceCeleritasTrackingAction.o
+
+# target to build an object file
+src/OpNoviceCeleritasTrackingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceCeleritasTrackingAction.cc.o
+.PHONY : src/OpNoviceCeleritasTrackingAction.cc.o
+
+src/OpNoviceCeleritasTrackingAction.i: src/OpNoviceCeleritasTrackingAction.cc.i
+.PHONY : src/OpNoviceCeleritasTrackingAction.i
+
+# target to preprocess a source file
+src/OpNoviceCeleritasTrackingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceCeleritasTrackingAction.cc.i
+.PHONY : src/OpNoviceCeleritasTrackingAction.cc.i
+
+src/OpNoviceCeleritasTrackingAction.s: src/OpNoviceCeleritasTrackingAction.cc.s
+.PHONY : src/OpNoviceCeleritasTrackingAction.s
+
+# target to generate assembly for a file
+src/OpNoviceCeleritasTrackingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceCeleritasTrackingAction.cc.s
+.PHONY : src/OpNoviceCeleritasTrackingAction.cc.s
 
 src/OpNoviceDetectorConstruction.o: src/OpNoviceDetectorConstruction.cc.o
 .PHONY : src/OpNoviceDetectorConstruction.o
@@ -414,53 +462,29 @@ src/OpNoviceRunAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceRunAction.cc.s
 .PHONY : src/OpNoviceRunAction.cc.s
 
-src/OpNoviceStackingAction.o: src/OpNoviceStackingAction.cc.o
-.PHONY : src/OpNoviceStackingAction.o
+src/OpNoviceSensitiveDetector.o: src/OpNoviceSensitiveDetector.cc.o
+.PHONY : src/OpNoviceSensitiveDetector.o
 
 # target to build an object file
-src/OpNoviceStackingAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o
-.PHONY : src/OpNoviceStackingAction.cc.o
+src/OpNoviceSensitiveDetector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSensitiveDetector.cc.o
+.PHONY : src/OpNoviceSensitiveDetector.cc.o
 
-src/OpNoviceStackingAction.i: src/OpNoviceStackingAction.cc.i
-.PHONY : src/OpNoviceStackingAction.i
-
-# target to preprocess a source file
-src/OpNoviceStackingAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.i
-.PHONY : src/OpNoviceStackingAction.cc.i
-
-src/OpNoviceStackingAction.s: src/OpNoviceStackingAction.cc.s
-.PHONY : src/OpNoviceStackingAction.s
-
-# target to generate assembly for a file
-src/OpNoviceStackingAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.s
-.PHONY : src/OpNoviceStackingAction.cc.s
-
-src/OpNoviceSteppingAction.o: src/OpNoviceSteppingAction.cc.o
-.PHONY : src/OpNoviceSteppingAction.o
-
-# target to build an object file
-src/OpNoviceSteppingAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSteppingAction.cc.o
-.PHONY : src/OpNoviceSteppingAction.cc.o
-
-src/OpNoviceSteppingAction.i: src/OpNoviceSteppingAction.cc.i
-.PHONY : src/OpNoviceSteppingAction.i
+src/OpNoviceSensitiveDetector.i: src/OpNoviceSensitiveDetector.cc.i
+.PHONY : src/OpNoviceSensitiveDetector.i
 
 # target to preprocess a source file
-src/OpNoviceSteppingAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSteppingAction.cc.i
-.PHONY : src/OpNoviceSteppingAction.cc.i
+src/OpNoviceSensitiveDetector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSensitiveDetector.cc.i
+.PHONY : src/OpNoviceSensitiveDetector.cc.i
 
-src/OpNoviceSteppingAction.s: src/OpNoviceSteppingAction.cc.s
-.PHONY : src/OpNoviceSteppingAction.s
+src/OpNoviceSensitiveDetector.s: src/OpNoviceSensitiveDetector.cc.s
+.PHONY : src/OpNoviceSensitiveDetector.s
 
 # target to generate assembly for a file
-src/OpNoviceSteppingAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSteppingAction.cc.s
-.PHONY : src/OpNoviceSteppingAction.cc.s
+src/OpNoviceSensitiveDetector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpNovice.dir/build.make CMakeFiles/OpNovice.dir/src/OpNoviceSensitiveDetector.cc.s
+.PHONY : src/OpNoviceSensitiveDetector.cc.s
 
 # Help Target
 help:
@@ -478,9 +502,15 @@ help:
 	@echo "... OpNovice.o"
 	@echo "... OpNovice.i"
 	@echo "... OpNovice.s"
+	@echo "... src/MakeCelerOptions.o"
+	@echo "... src/MakeCelerOptions.i"
+	@echo "... src/MakeCelerOptions.s"
 	@echo "... src/OpNoviceActionInitialization.o"
 	@echo "... src/OpNoviceActionInitialization.i"
 	@echo "... src/OpNoviceActionInitialization.s"
+	@echo "... src/OpNoviceCeleritasTrackingAction.o"
+	@echo "... src/OpNoviceCeleritasTrackingAction.i"
+	@echo "... src/OpNoviceCeleritasTrackingAction.s"
 	@echo "... src/OpNoviceDetectorConstruction.o"
 	@echo "... src/OpNoviceDetectorConstruction.i"
 	@echo "... src/OpNoviceDetectorConstruction.s"
@@ -505,12 +535,9 @@ help:
 	@echo "... src/OpNoviceRunAction.o"
 	@echo "... src/OpNoviceRunAction.i"
 	@echo "... src/OpNoviceRunAction.s"
-	@echo "... src/OpNoviceStackingAction.o"
-	@echo "... src/OpNoviceStackingAction.i"
-	@echo "... src/OpNoviceStackingAction.s"
-	@echo "... src/OpNoviceSteppingAction.o"
-	@echo "... src/OpNoviceSteppingAction.i"
-	@echo "... src/OpNoviceSteppingAction.s"
+	@echo "... src/OpNoviceSensitiveDetector.o"
+	@echo "... src/OpNoviceSensitiveDetector.i"
+	@echo "... src/OpNoviceSensitiveDetector.s"
 .PHONY : help
 
 

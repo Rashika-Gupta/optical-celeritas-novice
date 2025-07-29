@@ -1,6 +1,6 @@
 CMakeFiles/OpNovice.dir/src/OpNoviceEventAction.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNoviceEventAction.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceEventAction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNoviceEventAction.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceEventAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserEventAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/globals.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ios.hh \
@@ -811,7 +811,7 @@ CMakeFiles/OpNovice.dir/src/OpNoviceEventAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceRun.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceRun.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Run.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Event.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \

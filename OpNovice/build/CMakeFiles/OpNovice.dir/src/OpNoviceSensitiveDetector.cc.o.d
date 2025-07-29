@@ -1,8 +1,8 @@
-CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNoviceStackingAction.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceStackingAction.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserStackingAction.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ClassificationOfNewTrack.hh \
+CMakeFiles/OpNovice.dir/src/OpNoviceSensitiveDetector.cc.o: \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNoviceSensitiveDetector.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceSensitiveDetector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSensitiveDetector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4CollectionNameVector.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/globals.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ios.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Types.hh \
@@ -812,11 +812,38 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNoviceRun.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Run.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4OpticalPhoton.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleDefinition.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PDefManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4HCofThisEvent.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Allocator.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AllocatorPool.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VHitsCollection.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Step.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ThreeVector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/defs.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPhysicalVolume.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/geomdefs.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RotationMatrix.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/Rotation.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationInterfaces.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/LorentzVector.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/LorentzVector.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ZMxpv.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/AxisAngle.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/AxisAngle.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationInterfaces.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationX.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationX.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/PhysicalConstants.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/defs.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/SystemOfUnits.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationY.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationY.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationZ.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationZ.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/Rotation.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4GeomSplitter.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/geomwdefs.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AutoLock.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Threading.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
@@ -836,71 +863,10 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/pwdefs.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/PhysicalConstants.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/defs.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Units/SystemOfUnits.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleDefinition.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RunManager.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/evtdefs.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Allocator.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AllocatorPool.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryVertex.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryParticle.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ThreeVector.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/defs.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ThreeVector.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4HCofThisEvent.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VHitsCollection.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DCofThisEvent.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VDigiCollection.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrajectoryContainer.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VTrajectory.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserEventInformation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4EventManager.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StackManager.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StackedTrack.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackStack.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartTrackStack.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SubEventTrackStack.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SubEvent.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Track.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/trkdefs.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LogicalVolume.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Region.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4GeomSplitter.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/geomwdefs.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Region.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPhysicalVolume.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/geomdefs.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RotationMatrix.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/Rotation.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationInterfaces.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/LorentzVector.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/LorentzVector.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/ZMxpv.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/AxisAngle.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/AxisAngle.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationInterfaces.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationX.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationX.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationY.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationY.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationZ.h \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/RotationZ.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/Rotation.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPhysicalVolume.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LogicalVolume.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DynamicParticle.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ElectronOccupancy.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Log.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LorentzVector.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleMomentum.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DynamicParticle.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackStatus.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StepPoint.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SteppingControl.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StepStatus.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TouchableHandle.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VTouchable.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TouchableHistory.hh \
@@ -924,10 +890,12 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NavigationLevel.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NavigationHistoryPool.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NavigationHistory.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LogicalVolume.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Region.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Region.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LogicalVolume.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TouchableHistory.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ReferenceCountedHandle.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserTrackInformation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PhysicsModelCatalog.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Material.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Element.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ElementTable.hh \
@@ -960,6 +928,7 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Log.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PhysicsVectorType.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PhysicsVector.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4MaterialTable.hh \
@@ -967,49 +936,32 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4OrderedTable.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DataVector.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DataVector.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Track.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Step.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StepPoint.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SteppingControl.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StepStatus.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StepPoint.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackVector.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Step.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryTransformer.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTable.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTableIterator.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTable.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackingManager.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SteppingManager.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Navigator.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NormalNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSolid.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSolid.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AuxiliaryNavServices.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AuxiliaryNavServices.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NormalNavigation.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VoxelNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NavigationLogger.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4BlockingList.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4BlockingList.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelProxy.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelProxy.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelNode.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelNode.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelHeader.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelHeader.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VoxelNavigation.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParameterisedNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPVParameterisation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VVolumeMaterialScanner.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParameterisedNavigation.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ReplicaNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ReplicaNavigation.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RegularNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VExternalNavigation.hh \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Navigator.icc \
-  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NoProcess.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Track.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/trkdefs.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DynamicParticle.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ElectronOccupancy.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/pwdefs.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4LorentzVector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleDefinition.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PDefManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleDefinition.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleMomentum.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DynamicParticle.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackStatus.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserTrackInformation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PhysicsModelCatalog.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Track.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VHit.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VReadOutGeometry.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SensitiveVolumeList.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSDFilter.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceEventAction.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserEventAction.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SystemOfUnits.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4OpticalPhoton.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VProcess.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/Randomize.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Random/Randomize.h \
@@ -1082,10 +1034,78 @@ CMakeFiles/OpNovice.dir/src/OpNoviceStackingAction.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleChange.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleChange.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ProcessType.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4OpBoundaryProcess.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4OpticalSurface.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Physics2DVector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Physics2DVector.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SurfaceProperty.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RandomTools.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RandomDirection.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TwoVector.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/TwoVector.h \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/opt/spack/darwin-m1/clhep-2.4.7.1-go2puaxrlioqvr6ihhjticcuscoehfl7/include/CLHEP/Vector/TwoVector.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VDiscreteProcess.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ProcessManager.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ProcessVector.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ProcessVector.icc \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ProcessManager.icc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNoviceRun.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Run.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RunManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Event.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/evtdefs.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryVertex.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryParticle.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4DCofThisEvent.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VDigiCollection.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrajectoryContainer.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VTrajectory.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserEventInformation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4EventManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StackManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserStackingAction.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4StackedTrack.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackStack.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartTrackStack.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SubEventTrackStack.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SubEvent.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryTransformer.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTable.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTableIterator.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleTable.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4TrackingManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SteppingManager.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Navigator.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NormalNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSolid.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSolid.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AuxiliaryNavServices.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4AuxiliaryNavServices.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NormalNavigation.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VoxelNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NavigationLogger.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4BlockingList.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4BlockingList.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelProxy.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelProxy.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelNode.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelNode.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelHeader.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4SmartVoxelHeader.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VoxelNavigation.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParameterisedNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VPVParameterisation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParameterisedNavigation.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ReplicaNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ReplicaNavigation.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4RegularNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VExternalNavigation.hh \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4Navigator.icc \
+  /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4NoProcess.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UserSteppingAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VSteppingVerbose.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/trkgdefs.hh \

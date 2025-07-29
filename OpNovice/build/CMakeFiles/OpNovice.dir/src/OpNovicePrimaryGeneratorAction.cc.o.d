@@ -1,6 +1,6 @@
 CMakeFiles/OpNovice.dir/src/OpNovicePrimaryGeneratorAction.cc.o: \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/src/OpNovicePrimaryGeneratorAction.cc \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNovicePrimaryGeneratorAction.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/src/OpNovicePrimaryGeneratorAction.cc \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNovicePrimaryGeneratorAction.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleGun.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/globals.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ios.hh \
@@ -848,7 +848,7 @@ CMakeFiles/OpNovice.dir/src/OpNovicePrimaryGeneratorAction.cc.o: \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4PrimaryParticle.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4ParticleMomentum.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /Users/r1i/Desktop/project/optical-novice/OpNovice/include/OpNovicePrimaryGeneratorMessenger.hh \
+  /Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/include/OpNovicePrimaryGeneratorMessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UImessenger.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIdirectory.hh \
   /Users/r1i/Desktop/project/og-git-celeritas/requirements/spack/var/spack/environments/celeritas/.spack-env/view/include/Geant4/G4UIcommand.hh \
