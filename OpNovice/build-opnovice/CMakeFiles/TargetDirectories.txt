@@ -1,0 +1,7 @@
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/OpNovice.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/edit_cache.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/rebuild_cache.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/list_install_components.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/install.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/install/local.dir
+/Users/r1i/Desktop/project/optical-celeritas-novice/OpNovice/build-opnovice/CMakeFiles/install/strip.dir
