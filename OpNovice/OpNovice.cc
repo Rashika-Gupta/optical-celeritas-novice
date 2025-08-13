@@ -43,6 +43,7 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #include "OpNoviceDetectorConstruction.hh"
+#include <iostream>
 #ifdef GEANT4_USE_GDML
 #  include "OpNoviceGDMLDetectorConstruction.hh"
 #endif
@@ -147,12 +148,13 @@ int main(int argc, char** argv)
   else {
     runManager->SetUserInitialization(new OpNoviceDetectorConstruction());
   }
+  
   // Physics list
   auto& tmi = celeritas::TrackingManagerIntegration::Instance();
   
   G4VModularPhysicsList* physicsList = new FTFP_BERT;
   //physicsList->ReplacePhysics(new G4EmStandardPhysics_option4());
-  auto opticalPhysics = new G4OpticalPhysics();
+  auto opticalPhysics = new G4OpticalPhysics(true);
   physicsList->RegisterPhysics(opticalPhysics);
   physicsList->RegisterPhysics(
     new celeritas::TrackingManagerConstructor(&tmi));

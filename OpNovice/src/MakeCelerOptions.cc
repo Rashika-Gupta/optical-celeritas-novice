@@ -45,7 +45,8 @@ celeritas::SetupOptions MakeCelerOptions()
     opts.initializer_capacity = 1024 * 128 * 4;
 
   //  opts.ignore_processes = {"CoulombScat", "Cerenkov"};
-    opts.ignore_processes = {"CoulombScat"};
+    opts.ignore_processes = {"CoulombScat", "OpRayleigh"};
+  
 
     // Set along-step factory with zero field
     opts.make_along_step = celeritas::UniformAlongStepFactory();
@@ -53,6 +54,11 @@ celeritas::SetupOptions MakeCelerOptions()
     // Add a callback to adding user actions
     opts.add_user_actions = AddUserActions;
 
+    opts.optical_capacity = celeritas::inp::OpticalStateCapacity{
+        1024 * 128,  // max_num_optical_states
+        1024 * 128,  // max_num_optical_photons
+        1024 * 128,  // max_num_optical_surfaces
+    };
     return opts;
 }
 

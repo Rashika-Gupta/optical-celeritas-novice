@@ -185,11 +185,11 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   // Mie: gforward, gbackward, forward backward ratio
   G4double mie_water_const[3] = {0.99, 0.99, 0.8};
-
-  myMPT1->AddProperty("MIEHG", energy_water, mie_water, false, true);
-  myMPT1->AddConstProperty("MIEHG_FORWARD", mie_water_const[0]);
-  myMPT1->AddConstProperty("MIEHG_BACKWARD", mie_water_const[1]);
-  myMPT1->AddConstProperty("MIEHG_FORWARD_RATIO", mie_water_const[2]);
+  
+  //myMPT1->AddProperty("RSLENGTH", energy_water, mie_water);//, false, true);
+//  myMPT1->AddConstProperty("MIEHG_FORWARD", mie_water_const[0]);
+//  myMPT1->AddConstProperty("MIEHG_BACKWARD", mie_water_const[1]);
+//  myMPT1->AddConstProperty("MIEHG_FORWARD_RATIO", mie_water_const[2]);
 
   G4cout << "Water G4MaterialPropertiesTable:" << G4endl;
   myMPT1->DumpTable();
@@ -241,27 +241,27 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   // ------------- Surfaces --------------
 
   // Water Tank
-  auto opWaterSurface = new G4OpticalSurface("WaterSurface");
-  opWaterSurface->SetType(dielectric_LUTDAVIS);
-  opWaterSurface->SetFinish(Rough_LUT);
-  opWaterSurface->SetModel(DAVIS);
-
-  auto waterSurface =
-    new G4LogicalBorderSurface("WaterSurface", waterTank_phys, expHall_phys, opWaterSurface);
-
-  auto opticalSurface = dynamic_cast<G4OpticalSurface*>(
-    waterSurface->GetSurface(waterTank_phys, expHall_phys)->GetSurfaceProperty());
-  if (opticalSurface) opticalSurface->DumpInfo();
+ // auto opWaterSurface = new G4OpticalSurface("WaterSurface");
+ // opWaterSurface->SetType(dielectric_dielectric);
+ // opWaterSurface->SetFinish(ground);
+ // opWaterSurface->SetModel(unified); //changed optical properties to incorporate celeritas
+////
+ // auto waterSurface =
+ //   new G4LogicalBorderSurface("WaterSurface", waterTank_phys, expHall_phys, opWaterSurface);
+//
+  //auto opticalSurface = dynamic_cast<G4OpticalSurface*>(
+  //  waterSurface->GetSurface(waterTank_phys, expHall_phys)->GetSurfaceProperty());
+  //if (opticalSurface) opticalSurface->DumpInfo();
 
   // Air Bubble
   auto opAirSurface = new G4OpticalSurface("AirSurface");
   opAirSurface->SetType(dielectric_dielectric);
   opAirSurface->SetFinish(polished);
   opAirSurface->SetModel(glisur);
-
+//
   auto airSurface = new G4LogicalSkinSurface("AirSurface", bubbleAir_log, opAirSurface);
-
-  opticalSurface =
+//
+  auto opticalSurface =
     dynamic_cast<G4OpticalSurface*>(airSurface->GetSurface(bubbleAir_log)->GetSurfaceProperty());
   if (opticalSurface) opticalSurface->DumpInfo();
 
@@ -338,26 +338,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
     ed = "ConstProperty USERDEFINEDCONST still exists.";
     PrintError(ed);
   }
-  // done testing user-defined properties
-  ////////////////////////////////////////////////////////////////////////////
-/*Adding sensitive detector for celeritas */
- /* auto* bubble_sd = new OpNoviceSensitiveDetector(eventAction_);
-  G4SDManager::GetSDMpointer()->AddNewDetector(bubble_sd);
-  bubbleAir_log->SetSensitiveDetector(bubble_sd);
-   // Set the sensitive detector for the water tank
-  auto* water_sd = new OpNoviceSensitiveDetector(eventAction_);
-  G4SDManager::GetSDMpointer()->AddNewDetector(water_sd);
-  waterTank_log->SetSensitiveDetector(water_sd);
   
-  // Set the sensitive detector for the exp hall
-  auto* expHall_sd = new OpNoviceSensitiveDetector(eventAction_);
-  G4SDManager::GetSDMpointer()->AddNewDetector(expHall_sd);
-  expHall_log->SetSensitiveDetector(expHall_sd);
-  // Set the sensitive detector for the world
-  auto* world_sd = new OpNoviceSensitiveDetector(eventAction_);
-  G4SDManager::GetSDMpointer()->AddNewDetector(world_sd);
-  world_log->SetSensitiveDetector(world_sd);    
- */
   return world_phys;
 }
 

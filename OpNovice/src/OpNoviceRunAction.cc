@@ -53,7 +53,7 @@ G4Run* OpNoviceRunAction::GenerateRun()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void OpNoviceRunAction::BeginOfRunAction(const G4Run* run)
 {
-
+  std::cout << "Beginning of run action." << std::endl;
   celeritas::TrackingManagerIntegration::Instance().BeginOfRunAction(run);
   if (fPrimary) {
     G4ParticleDefinition* particle = fPrimary->GetParticleGun()->GetParticleDefinition();
